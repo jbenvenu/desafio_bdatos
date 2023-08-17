@@ -1,4 +1,5 @@
 import React, {useState} from "react";
+import "./styles/Form.css"
 
 const Formulario =({setAlert}) => {
     const [nombre, setNombre] = useState ("");
@@ -38,45 +39,45 @@ const validarDatos =(e) => {
 return (
     <>
 
-    <div>
-        <form className="customform" onSubmit={validarDatos}>
-            <input
+    <div className="customformx">
+        <form onSubmit={validarDatos}>
+            <input className="custominput"
                 type="text"
                 name="nombre"
                 placeholder="Nombre"
                 value={nombre}
                 onChange={(e) => setNombre (e.target.value)}
                 />
-            <input
+            <input className="custominput"
                 type="email"
                 name="email"
-                placeholder="tuemail@ejemplo.com"
+                placeholder="Email"
                 value={email}
                 onChange={(e) => setEmail (e.target.value)}
                 />
-            <input
+            <input className="custominput"
                 type="number"
                 name="edad"
                 placeholder="Edad"
                 value={edad}
                 onChange={(e) => setEdad (e.target.value)}
                 />
-            <input
+            <input className="custominput"
                 type="text"
                 name="cargo"
                 placeholder="Cargo"
                 value={cargo}
                 onChange={(e) => setCargo (e.target.value)}
                 />    
-            <input
+            <input className="custominput"
                 type="number"
                 name="telefono"
                 placeholder="Telefono"
                 value={telefono}
                 onChange={(e) => setTelefono (e.target.value)}
                 />
-                <div>
-                    <button className="custombuttoncf" type="submit">Agregar Colaborador</button>
+                <div className="boxbutton">
+                    <button className="custombuttonx" type="submit">Agregar Colaborador</button>
                 </div>
         </form>
 

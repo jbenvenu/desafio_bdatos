@@ -10,8 +10,16 @@ function App() {
 
   return (
     <>
-      <Listado/>
+    <div className='container'>
+    <div className='containerform'>
+      <h1 className='h1title'>Agregar Colaborador</h1>
       <Formulario/>
+      </div>
+      <div className='containerlist'>
+      <Listado/>
+      </div>
+   
+      </div>
     </>
   )
 }

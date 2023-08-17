@@ -1,0 +1,43 @@
+
+.customformx{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.custominput{
+    margin: 10px 0;
+    border-radius: 10px;
+    border: 1px grey solid;
+    text-align: center;
+}
+
+.custombuttonx{
+    color: rgb(255, 255, 255);
+    background-color: rgb(44, 79, 255);
+    border: none;
+    border-radius: 20px;
+    text-align: center;
+    padding: 2px 15px;
+}
+
+.boxbutton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+
+}
+
+.custombuttonx:hover{
+    background-color: rgb(148, 106, 254);
+    transition: all 1.7s;
+    color: white;
+}
