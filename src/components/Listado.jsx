@@ -6,12 +6,12 @@ function Listado() {
       <Table responsive="sm">
         <thead>
           <tr>
-            <th>#</th>
-            <th>Table heading</th>
-            <th>Table heading</th>
-            <th>Table heading</th>
-            <th>Table heading</th>
-            <th>Table heading</th>
+            <th>ID</th>
+            <th>Nombre</th>
+            <th>Correo</th>
+            <th>Edad</th>
+            <th>Cargo</th>
+            <th>Telefono</th>
             <th>Table heading</th>
           </tr>
         </thead>
