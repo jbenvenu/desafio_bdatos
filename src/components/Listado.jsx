@@ -1,4 +1,6 @@
+import React from 'react';
 import Table from 'react-bootstrap/Table';
+import { BaseColaboradores } from './BaseColaboradores';
 
 function Listado() {
   return (
@@ -12,20 +14,19 @@ function Listado() {
             <th>Edad</th>
             <th>Cargo</th>
             <th>Telefono</th>
-            <th>Table heading</th>
           </tr>
         </thead>
         <tbody>
-          <tr>
-            <td>1</td>
-            <td>Table cell</td>
-            <td>Table cell</td>
-            <td>Table cell</td>
-            <td>Table cell</td>
-            <td>Table cell</td>
-            <td>Table cell</td>
-          </tr>
-
+          {BaseColaboradores.map((colaborador) => (
+            <tr key={colaborador.id}>
+              <td>{colaborador.id}</td>
+              <td>{colaborador.nombre}</td>
+              <td>{colaborador.correo}</td>
+              <td>{colaborador.edad}</td>
+              <td>{colaborador.cargo}</td>
+              <td>{colaborador.telefono}</td>
+            </tr>
+          ))}
         </tbody>
       </Table>
     </div>

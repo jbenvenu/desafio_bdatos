@@ -25,7 +25,7 @@ const validarDatos =(e) => {
         }
 
         setAlert({
-         msg:"Cuenta creada exitosamente !",
+         msg:"Colaborador agregado Correctamente !",
          color : "success",
         });
         setNombre("");
