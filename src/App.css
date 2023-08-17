@@ -38,4 +38,13 @@
   margin-top: 40px;
 }
 
+.customsearch{
+  border-radius: 10px;
+  padding: 2px 10px;
+  border: 1px black solid;
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+
 
