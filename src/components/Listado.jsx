@@ -1,8 +1,12 @@
 import React from 'react';
 import Table from 'react-bootstrap/Table';
-import { BaseColaboradores } from './BaseColaboradores';
 
-function Listado() {
+function Listado({ colaboradores, busqueda }) {
+  // Filtrar colaboradores según el valor de búsqueda
+  const colaboradoresFiltrados = colaboradores.filter((colaborador) =>
+    colaborador.nombre.toLowerCase().includes(busqueda.toLowerCase())
+  );
+
   return (
     <div>
       <Table responsive="sm">
@@ -17,7 +21,7 @@ function Listado() {
           </tr>
         </thead>
         <tbody>
-          {BaseColaboradores.map((colaborador) => (
+          {colaboradoresFiltrados.map((colaborador) => (
             <tr key={colaborador.id}>
               <td>{colaborador.id}</td>
               <td>{colaborador.nombre}</td>
