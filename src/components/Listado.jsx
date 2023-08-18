@@ -25,7 +25,7 @@ function Listado({ colaboradores, busqueda }) {
             <tr key={colaborador.id}>
               <td>{colaborador.id}</td>
               <td>{colaborador.nombre}</td>
-              <td>{colaborador.correo}</td>
+              <td>{colaborador.email}</td>
               <td>{colaborador.edad}</td>
               <td>{colaborador.cargo}</td>
               <td>{colaborador.telefono}</td>
