@@ -8,7 +8,7 @@ function Listado({ colaboradores, busqueda }) {
   );
 
   return (
-    <div>
+    <div className='customlist'>
       <Table responsive="sm">
         <thead>
           <tr>
@@ -17,7 +17,7 @@ function Listado({ colaboradores, busqueda }) {
             <th>Correo</th>
             <th>Edad</th>
             <th>Cargo</th>
-            <th>Telefono</th>
+            <th>Teléfono</th>
           </tr>
         </thead>
         <tbody>

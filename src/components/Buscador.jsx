@@ -2,8 +2,10 @@ import React from 'react';
 
 function Buscador({ onBuscar }) {
   return (
-    <div className="bg-primary text-white p-4">
-      <h2 className="mb-4">Buscar Colaborador</h2>
+    <div>
+      <div className='customh2'>
+      <h2>Buscar Colaborador</h2>
+      </div>
       <input
         type="text"
         className="form-control"

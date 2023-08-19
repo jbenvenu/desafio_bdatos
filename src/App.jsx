@@ -19,25 +19,27 @@ function App() {
     };
 
     setColaboradores([...colaboradores, nuevoColaborador]);
-    setContadorId(contadorId + 1); 
+    setContadorId(contadorId + 1);
   };
 
   return (
-    <div className="container mt-5">
-      <div className="row">
-        <div className="col-md-6">
-          <Formulario onAgregarColaborador={agregarColaborador} setAlert={setAlert} contadorId={contadorId} setContadorId={setContadorId} />
-          {alert && (
-            <div className={`alert alert-${alert.color} mt-3`} role="alert">
-              {alert.msg}
-            </div>
-          )}
-        </div>
-        <div className="col-md-6">
-          <Buscador onBuscar={setBusqueda} />
-          <Listado colaboradores={colaboradores} busqueda={busqueda} />
-        </div>
+    <div className='bigcontainer'>
+      <div className="containerform">
+        <Formulario onAgregarColaborador={agregarColaborador} setAlert={setAlert} contadorId={contadorId} setContadorId={setContadorId} />
+        {alert && (
+          <div className={`alert alert-${alert.color} mt-3`} role="alert">
+            {alert.msg}
+          </div>
+        )}
       </div>
+
+      <div className='searchbox'>
+        <Buscador onBuscar={setBusqueda} />
+        <Listado colaboradores={colaboradores} busqueda={busqueda} />
+      </div>
+
+
+
     </div>
   );
 }

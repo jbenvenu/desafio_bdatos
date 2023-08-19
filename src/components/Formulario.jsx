@@ -44,11 +44,13 @@ const Formulario =({setAlert, onAgregarColaborador,contadorId}) => {
       };
     
       return (
-        <div className="custom-card">
-          <div className="card-body">
-            <h2 className="card-title">Agregar Colaborador</h2>
+
+        <div>        
+       
+            <h2>Agregar Colaborador</h2>
             <form onSubmit={validarDatos}>
-              <div className="input-column">
+
+              <div className="custominputbox">              
                 <input
                   className="custom-input"
                   type="text"
@@ -85,19 +87,20 @@ const Formulario =({setAlert, onAgregarColaborador,contadorId}) => {
                   className="custom-input"
                   type="number"
                   name="telefono"
-                  placeholder="Telefono"
+                  placeholder="Teléfono"
                   value={telefono}
                   onChange={(e) => setTelefono(e.target.value)}
                 />
-              </div>
-              <div className="d-grid">
-                <button className="btn btn-primary" type="submit">
+                <button className="custombutton" type="submit">
                   Agregar Colaborador
                 </button>
-              </div>
+                </div>
+
+             
             </form>
-          </div>
-        </div>
+
+            </div>
+     
       );
     };
 
